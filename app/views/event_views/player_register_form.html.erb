@@ -1,0 +1,10 @@
+<h1>Register to Play!</h1>
+<%= form_with model: @player_register_form do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
+
+    <%= f.label :player_name %>
+    <%= f.text_field :player_name %><br>
+
+    <%= f.submit %>
+<% end %>

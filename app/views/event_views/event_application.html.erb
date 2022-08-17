@@ -1,0 +1,22 @@
+<h1>Event Application Form</h1>
+<%= form_with model: @event_application do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
+
+    <%= f.label :dev_name %>
+    <%= f.text_field :dev_name %><br>
+
+    <%= f.label :game_name %>
+    <%= f.text_field :game_name %><br>
+
+    <%= f.label :multiplayer %>
+    <%= f.check_box :multiplayer %><br>
+
+    <%= f.label :game_description %><br>
+    <%= f.text_area :game_description %><br>
+
+    <%= f.label :why_playtest %><br>
+    <%= f.text_area :why_playtest %><br>
+
+    <%= f.submit %>
+<% end %>
